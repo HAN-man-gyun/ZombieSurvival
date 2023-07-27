@@ -1,5 +1,7 @@
 ﻿using System.Collections;
+#if UNITY_EDITOR
 using UnityEditor.Experimental.GraphView;
+#endif
 using UnityEngine;
 
 // 총을 구현
@@ -84,8 +86,6 @@ public class Gun : MonoBehaviour {
             state = State.Empty;
         }
 
-        
-        
     }
 
     // 발사 이펙트와 소리를 재생하고 탄알 궤적을 그림
